@@ -7,12 +7,12 @@
 <li>go run main.go</li>
 </ol>
 
-### 遇到的问题
+### 服务器部署过程中的问题  
 
-1、服务器部署过程中的问题
-app.Run(iris.Addr(":8080"))
-第一次在本机上go run main.go时，用localhost:8080 是可以访问的
-上传到vrltu服务器上后，用外网ip访问不了，误以为时因为ip简写的问题，
+app.Run(iris.Addr(":8080"))  
+
+第一次在本机上go run main.go时，用localhost:8080 是可以访问的  
+上传到vrltu服务器上后，用外网ip访问不了，误以为时因为ip简写的问题，  
 
 改成app.Run(iris.Addr("0.0.0.0:8080"))还是访问不了，以为是端口问题
 
